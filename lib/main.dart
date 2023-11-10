@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
       MetaSEO meta = MetaSEO();
       meta.author(author: 'Erick, Glaidson and Thiago');
       meta.description(description: 'Testing SEO packages for Flutter');
-      meta.keywords(keywords: 'Desenvolvimento de apps em Flutter, Desenvolvimento de aplicativos móveis, Flutter vs. outras tecnologias, Desenvolvedores Flutter experientes, UI/UX design para aplicativos móveis, Desenvolvimento de aplicativos Android e iOS, Desenvolvimento rápido de aplicativos, Desenvolvimento de apps personalizados, Integrações de API para aplicativos, Manutenção de aplicativos móveis, Consultoria de desenvolvimento Flutter, Comunidade Flutter, Widgets personalizáveis em Flutter, Performance de aplicativos móveis, Desenvolvimento de aplicativos empresariais, Suporte contínuo de desenvolvimento, Especialistas em Flutter, Empresa de desenvolvimento de aplicativos, Desenvolvimento de aplicativos atraentes, Experiência do usuário em aplicativos');
+      meta.keywords(keywords: 'saude, completo, iniciante, feminino, manicure');
     }
     return Scaffold(
       appBar: AppBar(
