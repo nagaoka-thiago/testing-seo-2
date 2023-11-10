@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Desenvolvimento de Apps em Flutter de Alta Qualidade'),
+      home: const MyHomePage(title: 'Saúde e Bem-estar'),
     );
   }
 }
@@ -48,8 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
     }
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        backgroundColor: Colors.white,
+        title: Text(widget.title, style: TextStyle(fontFamily: 'Inter', fontSize: 18, color: Color(0xFFE24580))),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -57,99 +57,200 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(
-                padding: const EdgeInsets.all(16),
-                child: const Text(
-                                    '1) Construa seu Aplicativo dos Sonhos com a Poderosa Tecnologia Flutter', style: TextStyle(fontSize: 20)
-                                 )
+                alignment: Alignment.center,
+                child: Column(
+                                children: [
+                                  Text('Curso Completo de Técnicas de Manicure para Iniciantes', style: TextStyle(fontFamily: 'Inter', fontSize: 32, fontWeight: FontWeight.bold)),
+                                  SizedBox(height: 16,),
+                                  Text('Domine as habilidades essenciais para atingir o público feminino em geral.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400, )),
+                                  SizedBox(height: 16,),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Container(padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Text('#saude', style: TextStyle(fontFamily: 'Inter', fontSize: 16, fontWeight: FontWeight.w500,))),
+                                        SizedBox(width: 8,),
+                                        Container(padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Text('#completo', style: TextStyle(fontFamily: 'Inter', fontSize: 16, fontWeight: FontWeight.w500))),
+                                        SizedBox(width: 8,),
+                                        Container(padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Text('#iniciante', style: TextStyle(fontFamily: 'Inter', fontSize: 16, fontWeight: FontWeight.w500))),
+                                        SizedBox(width: 8,),
+                                        Container(padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Text('#feminino', style: TextStyle(fontFamily: 'Inter', fontSize: 16, fontWeight: FontWeight.w500))),
+                                        SizedBox(width: 8,),
+                                        Container(padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Text('#manicure', style: TextStyle(fontFamily: 'Inter', fontSize: 16, fontWeight: FontWeight.w500))),
+                                      ],)
+                                  
+                                ],
+                             )
             ),
+            SizedBox(height: 40,),
+            Container(
+                alignment: Alignment.center,
+                padding: const EdgeInsets.symmetric(vertical: 24),
+                margin: const EdgeInsets.only(left: 16, right: 16, ),
+                decoration: BoxDecoration(border: Border(top: BorderSide(color: Color(0xFFF2F2F2)), bottom: BorderSide(color: Color(0xFFF2F2F2)))),
+                child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image(image: NetworkImage('https://cdn-icons-png.flaticon.com/512/2111/2111819.png'), width: 20, height: 20,),
+                                  SizedBox(width: 64),
+                                  Image(image: NetworkImage('https://cdn.iconscout.com/icon/free/png-256/free-linkedin-3660036-3094470.png'), width: 20, height: 20,),
+                                  SizedBox(width: 64),
+                                  Image(image: NetworkImage('https://cdn-icons-png.flaticon.com/512/4406/4406234.png'), width: 20, height: 20,),
+                                  SizedBox(width: 64),
+                                  Image(image: NetworkImage('https://cdn-icons-png.flaticon.com/512/1944/1944502.png'), width: 20, height: 20,)
+                                  
+                                ],
+                             )
+            ),
+            SizedBox(height: 40,),
             Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('1.1) Introdução ao Flutter'),
+                    Text('Descrição', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w500, color: Color(0xFFE24580))),
                     SizedBox(height: 16,),
-                    Text('Bem-vindo à revolução do desenvolvimento de aplicativos! O Flutter é a tecnologia que está transformando a maneira como criamos aplicativos móveis. Com a combinação perfeita de beleza, desempenho e produtividade, estamos prontos para ajudá-lo a criar um aplicativo que realmente se destaca no mercado.'),
+                    Text('First, before we dive into our essential header design tips, it’s important to cover the basics what is an email header, and where will you use one. ', style: TextStyle(fontFamily: 'Inter', fontSize: 18,)),
                     SizedBox(height: 16,),
+                    Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      Text('Promessa', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                      SizedBox(height: 16,),
+                      Text('Essentially, the e-mail header is an HTML code that shares details such as your authentication signature. This bit is, however, not visible to your readers. Hence, in the context of marketing, an e-mail header is simply the upper section of your e-mail that looks like this:', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
+                    ],),
+                    SizedBox(height: 16,),
+                    Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      Text('O que você vai aprender', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                      SizedBox(height: 16,),
+                      Text('Essentially, the e-mail header is an HTML code that shares details such as your authentication signature. This bit is, however, not visible to your readers. Hence, in the context of marketing, an e-mail header is simply the upper section of your e-mail that looks like this:', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
+                    ],),
+                    SizedBox(height: 16,),
+                    Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      Text('Por que este curso é único?', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                      SizedBox(height: 16,),
+                      Text('Essentially, the e-mail header is an HTML code that shares details such as your authentication signature. This bit is, however, not visible to your readers. Hence, in the context of marketing, an e-mail header is simply the upper section of your e-mail that looks like this:', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
+                    ],),
                   ],
                 )
             ),
+            SizedBox(height: 48,),
             Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('1.2) Por que Escolher Flutter?'),
+                    Text('Módulos', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w500, color: Color(0xFFE24580))),
                     SizedBox(height: 16,),
-                    Text('Desempenho Impecável: Flutter oferece um desempenho excepcional, resultando em aplicativos rápidos e suaves que seus usuários vão adorar.'),
+                    Row(
+                      children: [
+                        Container(padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 8), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Text('4 módulos', style: TextStyle(fontFamily: 'Inter', fontSize: 16, fontWeight: FontWeight.w500,))),
+                        SizedBox(width: 8,),
+                        Container(padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 8), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Text('85 aulas', style: TextStyle(fontFamily: 'Inter', fontSize: 16, fontWeight: FontWeight.w500))),
+                        SizedBox(width: 8,),
+                        Container(padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 8), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Text('14h50min', style: TextStyle(fontFamily: 'Inter', fontSize: 16, fontWeight: FontWeight.w500))),
+                      ],),
                     SizedBox(height: 16,),
-                    Text('Design Excepcional: Crie interfaces de usuário deslumbrantes e interativas com widgets personalizáveis e animações cativantes.'),
+                    Text('First, before we dive into our essential header design tips, it\'s important to cover the basics what is an e-mail header, and where will you use one.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
+                    SizedBox(height: 24,),
+                    Text('Módulo 1', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                    Text('Essentially, the e-mail header is an HTML code that shares details such as your authentication signature.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
                     SizedBox(height: 16,),
-                    Text('Desenvolvimento Rápido: Economize tempo e dinheiro com um único código-base que funciona em Android e iOS, acelerando o desenvolvimento.'),
+                    Text('Módulo 2', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                    Text('Essentially, the e-mail header is an HTML code that shares details such as your authentication signature.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
                     SizedBox(height: 16,),
-                    Text('Comunidade Ativa: Faça parte de uma comunidade global de desenvolvedores e aproveite recursos abundantes e suporte contínuo.'),
+                    Text('Módulo 3', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                    Text('Essentially, the e-mail header is an HTML code that shares details such as your authentication signature.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
                     SizedBox(height: 16,),
-                    Image(
-                        image: NetworkImage('https://static1.squarespace.com/static/593b245d1e5b6ca18c9ffd52/t/5aa2b91324a6948406f5dee5/1520613684486/SpriteWidget?format=2500w'),
-                        width: 512,
-                        height: 512,
+
+                  ],
+                )
+            ),
+            SizedBox(height: 48,),
+            Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Para quem é este curso', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w500, color: Color(0xFFE24580))),
+                    SizedBox(height: 16,),
+                    Text('Essentially, the email header is an HTML code that shares details such as your authentication signature. This bit is, however, not visible to your readers. Hence, in the context of marketing, an email header is simply the upper section of your email that looks like this:', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
+                  ],
+                )
+            ),
+            SizedBox(height: 48,),
+            Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Requisitos', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w500, color: Color(0xFFE24580))),
+                    SizedBox(height: 16,),
+                    Text('Nenhum conhecimento prévio é pre-requisito. Todos alunos poderão participar do curso.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
+                  ],
+                )
+            ),
+            SizedBox(height: 48,),
+            Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Tutores', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w500, color: Color(0xFFE24580))),
+                    SizedBox(height: 16,),
+                    Container(padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 32), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Row(
+                                    children: [
+                                      ClipRRect(borderRadius: BorderRadius.circular(32), child: Image(width: 64, height: 64, image: NetworkImage('https://media.licdn.com/dms/image/D4D03AQEilp1FH_tp6w/profile-displayphoto-shrink_800_800/0/1686600496613?e=1704931200&v=beta&t=d3UVP_SnfKIKiuScs5IAE4fyQmiWi2jIhEvf6rCQMkg'))),
+                                      SizedBox(width: 64,),
+                                      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                        Text('Thiago Nagaoka', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                                        SizedBox(height: 16,),
+                                        Text('Desenvolvedor Flutter Júnior', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
+                                      ],)
+                                  
+                                    ]
+                                 ,)
                     )
                   ],
                 )
             ),
+            SizedBox(height: 48,),
             Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('1.3) Nossos Serviços de Desenvolvimento'),
+                    Text('Perguntas Frequentes', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w500, color: Color(0xFFE24580))),
                     SizedBox(height: 16,),
-                    Text('Na nossa empresa, estamos comprometidos em oferecer serviços de desenvolvimento de aplicativos em Flutter que atendam às suas necessidades. Nossos especialistas podem ajudar com:'),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('Eu tenho acesso ilimitado às aulas?', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                        Icon(Icons.keyboard_arrow_up)
+                      ],
+                    ),
                     SizedBox(height: 16,),
-                    Text('Desenvolvimento de Aplicativos Móveis: Desde aplicativos simples até soluções empresariais complexas, estamos prontos para tornar sua visão uma realidade.'),
+                    Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque eros vel elit volutpat, non tempus turpis aliquet. Curabitur sodales velit ut nisi dapibus cursus phasellus ut dignissim ante.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
                     SizedBox(height: 16,),
-                    Text('UI/UX Design: Criamos interfaces de usuário atraentes e intuitivas que proporcionam uma experiência excepcional ao usuário.'),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('Quando o curso começa?', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                        Icon(Icons.keyboard_arrow_up)
+                      ],
+                    ),
                     SizedBox(height: 16,),
-                    Text('Manutenção e Suporte: Mantenha seu aplicativo atualizado e funcionando sem problemas com nossos serviços de manutenção.'),
+                    Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque eros vel elit volutpat, non tempus turpis aliquet. Curabitur sodales velit ut nisi dapibus cursus phasellus ut dignissim ante.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
                     SizedBox(height: 16,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('Este curso emite certificado?', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.bold)),
+                        Icon(Icons.keyboard_arrow_up)
+                      ],
+                    ),
+                    SizedBox(height: 16,),
+                    Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque eros vel elit volutpat, non tempus turpis aliquet. Curabitur sodales velit ut nisi dapibus cursus phasellus ut dignissim ante.', style: TextStyle(fontFamily: 'Inter', fontSize: 18, fontWeight: FontWeight.w400)),
                   ],
                 )
             ),
-            Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('1.4) Por que Escolher Nossa Equipe?'),
-                    SizedBox(height: 16,),
-                    Text('Nossa equipe de desenvolvedores Flutter é apaixonada por criar aplicativos excepcionais. Com anos de experiência e um portfólio impressionante, estamos prontos para enfrentar qualquer desafio de desenvolvimento. Além disso, estamos comprometidos com a transparência, comunicação constante e prazos cumpridos.'),
-                    SizedBox(height: 16,),
-                  ],
-                )
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('1.5) Entre em Contato Conosco'),
-                  SizedBox(height: 16,),
-                  Text('Se você deseja iniciar o desenvolvimento de seu aplicativo em Flutter ou deseja obter mais informações, não hesite em nos contatar. Estamos ansiosos para ouvir sobre sua ideia e discutir como podemos ajudá-lo a alcançar o sucesso no mundo dos aplicativos móveis.'),
-                  SizedBox(height: 16,),
-                ],
-              ),
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Chamada para Ação:'),
-                  SizedBox(height: 16,),
-                  Text('Pronto para criar um aplicativo incrível em Flutter? Entre em contato conosco agora e comece sua jornada de desenvolvimento!')
-                ],
-              ),
-            )
           ],
         ),
       )
