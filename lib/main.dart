@@ -208,6 +208,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ]
                                  ,)
                     ),
+                    SizedBox(height: 16,),
                     Container(padding: const EdgeInsets.symmetric(horizontal: 64, vertical: 32), decoration: BoxDecoration(color: Color(0xFFF2F2F2), borderRadius: BorderRadius.circular(32)), child: Row(
                                     children: [
                                       ClipRRect(borderRadius: BorderRadius.circular(32), child: Image(width: 64, height: 64, image: NetworkImage('https://media.licdn.com/dms/image/D4D03AQFQIT3V2nu2UA/profile-displayphoto-shrink_100_100/0/1693267194067?e=1704931200&v=beta&t=QDxAeELZFUpZUO8Q9__wxbRMBaXi27S6osR5KfIPrFU'))),
